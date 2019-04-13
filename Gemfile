@@ -25,8 +25,9 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
-# custom
+# blazer related
 gem 'blazer', '~> 2.0'
+gem 'odbc_adapter', github: 'instacart/odbc_adapter', branch: 'master'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
