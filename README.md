@@ -1,24 +1,22 @@
-# README
+# ghost-blazer
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Install
 
-Things you may want to cover:
+Install ODBC driver:
 
-* Ruby version
+* Driver: https://sfc-repo.snowflakecomputing.com/odbc/mac64/index.html
+* iODBC: http://www.iodbc.org/dataspace/doc/iodbc/wiki/iodbcWiki/Downloads
 
-* System dependencies
+Then:
 
-* Configuration
+    bundle install
+    
+### Run
 
-* Database creation
+Set env variable:
 
-* Database initialization
+    export BLAZER_SNOWFLAKE_CONN_STR="Driver=/opt/snowflake/snowflakeodbc/lib/universal/libSnowflake.dylib;server=<SERVER>;warehouse=<WAREHOUSE>;uid=<UID>;pwd=<PWD>;CLIENT_SESSION_KEEP_ALIVE=true;database=<DB>;schema=<SCHEMA>"
 
-* How to run the test suite
+Then:
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+    rails s

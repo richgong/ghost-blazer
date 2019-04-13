@@ -33,7 +33,7 @@ data_sources:
     # user_id: "SELECT id, name FROM users WHERE id IN {value}"
   snowflake_yo:
     adapter: snowflake
-    conn_str: <%= ENV["SNOWFLAKE_DATABASE_URL"] %>
+    conn_str: <%= ENV["BLAZER_SNOWFLAKE_CONN_STR"] %>
 
 # create audits
 audit: true
